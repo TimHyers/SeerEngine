@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeerEditor", "SeerEditor\SeerEditor.csproj", "{AC6430A9-9514-4CB4-88BA-2A2C05A5534D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{EECC2036-10C6-4B24-86AB-11403BC2643D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6430A9-9514-4CB4-88BA-2A2C05A5534D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC6430A9-9514-4CB4-88BA-2A2C05A5534D}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC6430A9-9514-4CB4-88BA-2A2C05A5534D}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC6430A9-9514-4CB4-88BA-2A2C05A5534D}.Release|x64.Build.0 = Release|Any CPU
+		{EECC2036-10C6-4B24-86AB-11403BC2643D}.Debug|x64.ActiveCfg = Debug|x64
+		{EECC2036-10C6-4B24-86AB-11403BC2643D}.Debug|x64.Build.0 = Debug|x64
+		{EECC2036-10C6-4B24-86AB-11403BC2643D}.Release|x64.ActiveCfg = Release|x64
+		{EECC2036-10C6-4B24-86AB-11403BC2643D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62CD9AA7-3020-46CD-A70E-C2B2BE9BD4F3}
+	EndGlobalSection
+EndGlobal
