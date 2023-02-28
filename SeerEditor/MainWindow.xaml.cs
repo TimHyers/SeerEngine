@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,15 @@ namespace SeerEditor
         {
             InitializeComponent();
             Loaded += OnMainWindowLoaded;
+            Closing += OnMainWindowClosing; ;
+        }
+
+
+        private void OnMainWindowClosing(object sender, CancelEventArgs e)
+        {
+            Closing -= OnMainWindowClosing;
+            Project.CurrentProject?.Unload();
+            
         }
 
         private void OnMainWindowLoaded(object sender, RoutedEventArgs e)
@@ -36,13 +46,14 @@ namespace SeerEditor
         private void OpenProjectBrowserDialog()
         {
             var projectBrowser = new ProjectBrowser();
-            if (projectBrowser.ShowDialog() == false)
+            if (projectBrowser.ShowDialog() == false || projectBrowser.DataContext == null)
             {
                 Application.Current.Shutdown();
             }
             else
             {
-                
+                Project.CurrentProject?.Unload();
+                DataContext = projectBrowser.DataContext;
             }
         }
     }
